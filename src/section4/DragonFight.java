@@ -12,22 +12,40 @@ public class DragonFight {
 		
 		JOptionPane.showMessageDialog(null, "Defeat the dragon to take its treasure!", "Dragon Fighter", 0, dragon);
 		// 2. Create a variable called "playerHealth" to store your health (set it equal to 100)
-	
-		// 3. Create a variable called "dragonHealth" to store the dragon's health (set it equal to 100)
-		
+	int playerHealth=100;
+		// 3. Create a variable called "dragonHealth" to store the dragon's health (set it equal to 1000)
+		int dragonHealth=1000;
 		// 4. Create a variable to hold the damage the player's attack does each round
-		
+		int player;
 		// 5. Create a variable to hold the damage the dragon's attack does each round
-		
+		int doofy;
 		
 		// 6.  Delete the slashes at the beginning of the next line.  
-		//while(playerHealth>0 && dragonHealth>0) {    //this line of code keeps the battle going until someone's health reaches 0 
+		while(playerHealth>0 && dragonHealth>0) {    //this line of code keeps the battle going until someone's health reaches 0 
 		
 		// 7. Add a closing mustache at the very bottom of this program (since we just added an opening mustache on the previous step).
 		
 		// 8. Ask the player in a pop-up if they want to attack the dragon with a yell or a kick
-		
+		String string=JOptionPane.showInputDialog("how are you going to attack doofy your optoins are: Fart, Shoot, Slash, Kick, and punch");
 		// 9. If they typed in "yell":
+		if (string.equals("Fart")) {
+			player=1000;
+			dragonHealth-=player;
+			
+		}if (string.equals("Shoot")) {
+			player= new Random().nextInt(51);
+			dragonHealth-=player;}
+		
+		if (string.equals("Slash")) {
+			player= new Random().nextInt(51);
+			dragonHealth-=player;}
+		if (string.equals("Kick")) {
+			player= new Random().nextInt(51);
+			dragonHealth-=player;}
+		if (string.equals("Punch")) {
+			player= new Random().nextInt(51);
+			dragonHealth-=player;}
+		
 		
 			//-- Find a random number between 0 and 10 and store it in dragonDamage
 			
@@ -62,4 +80,4 @@ public class DragonFight {
 			
 		}
 	}
-
+}
